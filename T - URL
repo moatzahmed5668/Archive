@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include<bits/stdc++.h>
+#include <iomanip>
+#include <iostream>
+#include<bitset>
+#include <string>
+#include <string.h>
+#include<algorithm>
+#include <cstdio>
+using namespace std;
+
+
+int main() {
+string s;
+cin>>s;
+int counter=1;
+int index=0;
+while(s.find('=',index)!=std::string::npos)
+{
+    if(counter==1){
+        cout<<"username: ";
+    }
+    else if(counter==2){
+        cout<<"pwd: ";
+    }
+    else if(counter==3){
+        cout<<"profile: ";
+    }
+    else if(counter==4)
+    {
+        cout<<"role: ";
+    }
+    else if(counter==5)
+    {
+        cout<<"key: ";
+    }
+    index=s.find('=',index);
+    for(int i=index+1 ; i<s.size();i++)
+    {
+        if(s[i]=='&')
+            break;
+        else
+            cout<<s[i];
+        index++;
+    }
+    cout<<endl;
+    counter++;
+    if(counter==6)
+        break;
+
+}
+
+
+    return 0;
+}
