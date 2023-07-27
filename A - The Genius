@@ -1,0 +1,30 @@
+#include <iostream>
+#include<math.h>
+#include<iomanip>
+#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{
+   long long x1 , x2 , y1 , y2;
+   cin>>x1>>x2>>y1>>y2;
+   long long aliaa=x1*x2,amira=y1*y2;
+   if(aliaa>amira)
+    cout<<"Alyaa is the genius";
+   else if (amira > aliaa)
+    cout<<"Amira is the genius";
+   else
+    cout<<"Everyone is genius";
+
+    return 0;
+}
+
+
+
+
+
