@@ -1,0 +1,28 @@
+#include <iostream>
+#include<math.h>
+#include<iomanip>
+#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+main()
+{
+    long long x,flag=0;
+    cin>>x;
+    long long y=(x-1)/2;
+    if(y==0)
+        cout<<-1;
+    else
+        cout<<y;
+
+    return 0;
+}
+
+
+
+
+
