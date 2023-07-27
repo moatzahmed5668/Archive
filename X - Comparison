@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include<bits/stdc++.h>
+#include <iomanip>
+#include <iostream>
+#include<bitset>
+#include <string>
+#include <string.h>
+#include<algorithm>
+#include <cstdio>
+using namespace std;
+
+
+int main() {
+string s;
+cin>>s;
+string minimum=s;
+for(int i=0 ; i<s.size()-1 ; i++){
+    string new_string;
+    string sub1,sub2;
+    sub1=s.substr(0,i+1);
+    sort(sub1.begin(),sub1.end());
+    sub2=s.substr(i+1);
+    sort(sub2.begin(),sub2.end());
+    new_string=sub1+sub2;
+    minimum=min(minimum,new_string);
+
+}
+cout<<minimum<<endl;
+return 0;
+}
